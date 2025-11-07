@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import Dashboard from './Dashboard/Dashboard'
 import AppLayout from './layouts/AppLayout'
 import IsAuthenticate from './protectedRoute/IsAuthenticate'
+import TeamDashboard from './Dashboard/components/Teams'
 const App = () => {
   return (
     <BrowserRouter>
@@ -27,6 +28,15 @@ const App = () => {
             }
           />
         </Route>
+
+        <Route path='/dashboard/teams' element={
+          <AppLayout>
+
+
+            <TeamDashboard />
+          </AppLayout>
+
+        } />
 
 
       </Routes>

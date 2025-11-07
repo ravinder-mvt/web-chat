@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 const Navbar = () => {
     return (
-        <nav className="p-4 border-b ">
+        <nav className="p-4 border-b fixed top-0 opacity-90 z-50 w-full left-0 ">
 
             <div className="custom-container flex items-center justify-between">
                 <div className="flex items-center justify-center gap-4">

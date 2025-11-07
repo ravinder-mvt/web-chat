@@ -38,7 +38,7 @@ import {getUserFromLocalStorage} from "@/utills/helper/getUser"
 const UserData=getUserFromLocalStorage()
 const localUser = localStorage.getItem('user')
 const getGoogleUser=localUser ? JSON.parse(localUser) : null
-console.log("here is the user data",getGoogleUser)
+// console.log("here is the user data",getGoogleUser)
 
 // console.log("here is the user data",UserData)
 
@@ -75,7 +75,7 @@ const data = {
     },
     {
       title: "Team",
-      url: "/team",
+      url: "/dashboard/teams",
       icon: IconUsers,
     },
   ],
